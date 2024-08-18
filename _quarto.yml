@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  site-path: "/babelbook/"
+  site-url: "https://nenuial.github.io/babelbook/"
   title: "babelbook"
   author: "Pascal Burkhard"
   date: "18.08.2024"
