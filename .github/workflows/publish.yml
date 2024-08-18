@@ -21,6 +21,11 @@ jobs:
             github::ropensci-review-tools/babelquarto
       - name: Render Book with babelquarto
         run: Rscript -e 'babelquarto::render_book()'
+      - name: Achive book render
+        uses: actions/upload-artifact@v4
+        with:
+          name: book_render
+          path: _book/
       - name: Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
