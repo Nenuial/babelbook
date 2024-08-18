@@ -6,6 +6,8 @@ on:
 jobs:
   render:
     runs-on: ubuntu-latest
+    env:
+      BABELQUARTO_CI_URL: https://nenuial.github.io/babelbook/
     permissions:
       contents: write
     steps:
