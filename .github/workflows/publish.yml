@@ -20,7 +20,7 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2 
         with: 
           packages: |
-            github::ropensci-review-tools/babelquarto
+            github::ropensci-review-tools/babelquarto@a485fea
       - name: Render Book with babelquarto
         run: Rscript -e 'babelquarto::render_book()'
       - name: Achive book render
